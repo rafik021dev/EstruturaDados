@@ -49,7 +49,7 @@ public class ListaCircular {
         }
     }
 
-    public void mostrarLista() {
+    protected void mostrarLista() {
         if (vazia()) {
             System.out.println("Lista Vazia");
             return;
@@ -59,6 +59,20 @@ public class ListaCircular {
             System.out.println(oNodoAux.getDado());
             oNodoAux = oNodoAux.getProx();
         } while (oNodoAux != inicio);
+    }
+
+    public void getTamanho() {
+        if(vazia()) {
+            System.out.println("Lista Vazia");
+            return;
+        }
+        Nodo oNodoAux = inicio;
+        int iTamanho = 0;
+        do {
+            iTamanho++;
+            oNodoAux = oNodoAux.getProx();
+        } while (oNodoAux != inicio);
+        System.out.println("O tamanho da Lista é: " + iTamanho);
     }
 }
 

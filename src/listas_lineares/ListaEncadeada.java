@@ -68,4 +68,35 @@ public class ListaEncadeada {
             oNodoAux = oNodoAux.getProx();
         }
     }
+
+    public void imprimirMeio() {
+        if (vazia()) {
+            System.out.println("Lista Vazia");
+            return;
+        }
+
+        Nodo oNodoUm = inicio;
+        Nodo oNodoDois = inicio;
+
+        while (oNodoDois != null && oNodoDois.getProx() != null) {
+            oNodoUm = oNodoUm.getProx();
+            oNodoDois = oNodoDois.getProx().getProx();
+        }
+
+        System.out.println("Nodo do meio: " + oNodoUm.getDado());
+    }
+
+    public void transformarEmCircular() {
+        if (vazia()) {
+            System.out.println("Lista Vazia");
+            return;
+        }
+
+        Nodo oNodoAux = inicio;
+
+        while (oNodoAux.getProx() != null) {
+            oNodoAux = oNodoAux.getProx();
+        }
+        oNodoAux.setProx(inicio);
+    }
 }
