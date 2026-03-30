@@ -21,13 +21,14 @@ public class ListaEncadeada {
         return inicio == null;
     }
 
-
+    // O(1)
     public void inserirInicio(int dado) {
         Nodo novoNodo = new Nodo(dado);
         novoNodo.setProx(inicio);
         inicio = novoNodo;
     }
 
+    //O(n)
     public void inserirFinal(int dado) {
         if (vazia()) {
             System.out.println("Lista Vazia");
@@ -41,6 +42,7 @@ public class ListaEncadeada {
         oNodoAux.setProx(oNovoNodo);
     }
 
+    //O(n)
     public void mostrarLista() {
         if (vazia()) {
             System.out.println("Lista Vazia");
@@ -53,6 +55,7 @@ public class ListaEncadeada {
         }
     }
 
+    //O(n)
     public void removerValor(int iValor) {
         if (vazia()) return;
         if(inicio.getDado() == iValor) {

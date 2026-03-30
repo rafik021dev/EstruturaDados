@@ -3,7 +3,7 @@ package listas_lineares;
 public class TesteListaEncadeada {
 
     public static void main(String[] args) {
-        ListaEncadeada oLista1 = new ListaEncadeada();
+        ListaDuplamenteEncadeada oLista1 = new ListaDuplamenteEncadeada();
 
         oLista1.inserirInicio(8);
         oLista1.inserirInicio(2);
@@ -12,12 +12,10 @@ public class TesteListaEncadeada {
         oLista1.inserirFinal(5);
         oLista1.inserirFinal(7);
 
+        //corrigir isso aqui depois
         //oLista1.removerValor(8);
-        //oLista1.getTamanho();
-        oLista1.imprimirMeio();
-        //oLista1.mostrarLista();
-        oLista1.transformarEmCircular();
-        //oLista1.mostrarLista();
+
+        oLista1.mostrarLista();
 
     }
 }

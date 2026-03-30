@@ -19,6 +19,10 @@ public class Nodo {
         this.dado = dado;
     }
 
+    /**
+     * Retorna o Próximo Nodo
+     * @return Nodo
+     */
     public Nodo getProx() {
         return prox;
     }
