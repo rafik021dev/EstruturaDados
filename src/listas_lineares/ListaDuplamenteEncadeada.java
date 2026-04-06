@@ -45,7 +45,8 @@ public class ListaDuplamenteEncadeada {
         }
         NodoDuplo oNovoNodo = new NodoDuplo(iDado);
         fim.setProx(oNovoNodo);
-        fim.setAnt(oNovoNodo);
+        //fim.setAnt(oNovoNodo);
+        oNovoNodo.setAnt(fim);
         fim = oNovoNodo;
     }
 
@@ -94,6 +95,62 @@ public class ListaDuplamenteEncadeada {
                 return;
             }
             oNodoAux = oNodoAux.getProx();
+        }
+    }
+
+    public void mostrarListaInversa() {
+        if (vazia()) {
+            System.out.println("Lista Vazia");
+            return;
+        }
+        NodoDuplo oNodoAux = fim;
+        while (oNodoAux != null) {
+            System.out.println(oNodoAux.getDado());
+            oNodoAux = oNodoAux.getAnt();
+        }
+    }
+
+    public void mostrarMaiorMenor() {
+        if (vazia()) {
+            System.out.println("Lista Vazia");
+            return;
+        }
+        NodoDuplo oNodoAux = inicio;
+        int iMaior = inicio.getDado();
+        int iMenor = inicio.getDado();
+        while (oNodoAux != null) {
+            if (oNodoAux.getDado() > iMaior) {
+                iMaior = oNodoAux.getDado();
+            }
+            if (oNodoAux.getDado() < iMenor) {
+                iMenor = oNodoAux.getDado();
+            }
+            oNodoAux = oNodoAux.getProx();
+        }
+        System.out.println("Maior: " + iMaior);
+        System.out.println("Menor: " + iMenor);
+    }
+
+    public void isPalindromo() {
+        if (vazia()) {
+            System.out.println("Lista Vazia");
+            return;
+        }
+        NodoDuplo oNodoAuxNormal  = inicio;
+        NodoDuplo oNodoAuxInverso = fim;
+        boolean bPalindromo = true;
+        while (oNodoAuxNormal != oNodoAuxInverso && oNodoAuxInverso.getProx() != oNodoAuxNormal) {
+            if (oNodoAuxNormal.getDado() != oNodoAuxInverso.getDado()) {
+                bPalindromo = false;
+                break;
+            }
+            oNodoAuxNormal  = oNodoAuxNormal.getProx();
+            oNodoAuxInverso = oNodoAuxInverso.getAnt();
+        }
+        if (bPalindromo) {
+            System.out.println("É um palíndromo");
+        } else {
+            System.out.println("Não é um palíndromo");
         }
     }
 

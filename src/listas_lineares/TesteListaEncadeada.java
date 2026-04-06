@@ -16,6 +16,8 @@ public class TesteListaEncadeada {
         //oLista1.removerValor(8);
 
         oLista1.mostrarLista();
-
+        oLista1.mostrarListaInversa();
+        oLista1.mostrarMaiorMenor();
+        oLista1.isPalindromo();
     }
 }
