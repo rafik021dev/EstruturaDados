@@ -1,0 +1,73 @@
+Repeticoes por teste: 3
+
+Tamanho: 100000 | Vetor: Ordenado
+--------------------------------------------------------------------------
+Algoritmo            Comparacoes      Movimentos     Tempo medio
+--------------------------------------------------------------------------
+Bubble Sort                99999               0        2,375 ms
+Insertion Sort             99999           99999        2,161 ms
+Selection Sort        4999950000               0     1620,053 ms
+Merge Sort                853904         2522832       12,356 ms
+Quick Sort               1600016               0        9,279 ms
+Shell Sort               1500006         1500006        7,415 ms
+Counting Sort             199998          300000        3,128 ms
+
+Tamanho: 100000 | Vetor: Invertido
+--------------------------------------------------------------------------
+Algoritmo            Comparacoes      Movimentos     Tempo medio
+--------------------------------------------------------------------------
+Bubble Sort           4999950000     14999850000     6687,924 ms
+Insertion Sort        4999950000      5000049999     6935,912 ms
+Selection Sort        4999950000          150000     8764,528 ms
+Merge Sort                815024         3337856        7,869 ms
+Quick Sort               1600030          150000        9,215 ms
+Shell Sort               2244585         2344566        7,008 ms
+Counting Sort             199998          300000        3,527 ms
+
+Tamanho: 100000 | Vetor: Aleatorio
+--------------------------------------------------------------------------
+Algoritmo            Comparacoes      Movimentos     Tempo medio
+--------------------------------------------------------------------------
+Bubble Sort           4999751865      7489747062    13359,582 ms
+Insertion Sort        2496682344      2496682353     2719,186 ms
+Selection Sort        4999950000          299976     9696,855 ms
+Merge Sort               1536735         3282863       12,605 ms
+Quick Sort               2365272         1144539       22,961 ms
+Shell Sort               4238946         4289530       14,344 ms
+Counting Sort             199998          300000        6,151 ms
+
+Tamanho: 1000000 | Vetor: Ordenado
+--------------------------------------------------------------------------
+Algoritmo            Comparacoes      Movimentos     Tempo medio
+--------------------------------------------------------------------------
+Bubble Sort               999999               0        0,881 ms
+Insertion Sort            999999          999999        2,088 ms
+Selection Sort      499999500000               0  1002328,372 ms
+Merge Sort              10066432        30017856       71,079 ms
+Quick Sort              19000019               0       17,921 ms
+Shell Sort              18000007        18000007       28,963 ms
+Counting Sort            1999998         3000000       11,711 ms
+
+Tamanho: 1000000 | Vetor: Invertido
+--------------------------------------------------------------------------
+Algoritmo            Comparacoes      Movimentos     Tempo medio
+--------------------------------------------------------------------------
+Bubble Sort         499999500000   1499998500000   615637,254 ms
+Insertion Sort      499999500000    500000499999   585607,438 ms
+Selection Sort      499999500000         1500000   946471,989 ms
+Merge Sort               9884992        39902848      103,264 ms
+Quick Sort              19000036         1500000       19,072 ms
+Shell Sort              26357530        27357511       41,742 ms
+Counting Sort            1999998         3000000        3,347 ms
+
+Tamanho: 1000000 | Vetor: Aleatorio
+--------------------------------------------------------------------------
+Algoritmo            Comparacoes      Movimentos     Tempo medio
+--------------------------------------------------------------------------
+Bubble Sort         499997988809    751111351833  1260299,644 ms
+Insertion Sort      250371450599    250371450610   266845,831 ms
+Selection Sort      499999500000         2999946   939650,927 ms
+Merge Sort              18674080        39297713      148,396 ms
+Quick Sort              26991139        14223702      107,098 ms
+Shell Sort              68647086        69150163      196,070 ms
+Counting Sort            1999998         3000000       10,042 ms
